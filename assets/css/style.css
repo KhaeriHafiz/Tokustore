@@ -1,0 +1,181 @@
+body {
+    background-color: #e9eaee;
+}
+
+.navbar-nav a {
+    color: white;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-nav {
+    background-color: rgba(240, 248, 255, 0.155);
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+}
+
+.bg-banner {
+    background-image: url('../img/banner-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 64px), calc(100% - 64px) 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 64px), calc(100% - 64px) 100%, 0 100%);
+}
+
+.button-sharp {
+    display: inline-block;
+    transition: opacity 200ms,
+        border-color 200ms,
+        background-color 200ms,
+        color 200ms;
+    /* border-radius: var(--button-corner-radius); */
+    padding: 10px 42px;
+    -webkit-clip-path: polygon(18px 0%, 100% 0%, calc(100% - 18px) 100%, 0% 100%);
+    clip-path: polygon(18px 0%, 100% 0%, calc(100% - 18px) 100%, 0% 100%);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button--primary {
+    background-color: #e6202b;
+    color: white;
+}
+
+.button--secondary {
+    background-color: #262829;
+    color: white;
+}
+
+.tile__wrapper {
+    position: relative;
+    transition: transform ease-in-out 0.1s;
+    height: 100%;
+    padding: 8px;
+    transition: all 0.5s;
+}
+
+.tile__inner {
+    padding: 22px 12px;
+    height: 100%;
+    background-color: white;
+    -webkit-clip-path: polygon(48px 0%, 100% 0, 100% calc(100% - 48px), calc(100% - 48px) 100%, 0 100%, 0% 48px);
+    clip-path: polygon(48px 0%, 100% 0, 100% calc(100% - 48px), calc(100% - 48px) 100%, 0 100%, 0% 48px);
+}
+
+.tile__image {
+    position: relative;
+    padding: 20px;
+}
+
+.tile__description {
+    margin-top: 10px;
+}
+
+.tile__heading {
+    transition: color 200ms;
+    color: #1f2122;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.tile__price {
+    margin-top: 4px;
+    color: #1f2122;
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+.tile__wrapper:hover {
+    height: 100%;
+    padding: 20px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(234, 234, 234)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(234, 234, 234);
+}
+
+@media (max-width: 991px) {
+    .small-nav {
+        display: none !important;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .button-sharp {
+        padding: 10px 32px;
+    }
+
+    .bg-banner {
+        background-image: url('../img/banner-small.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 578px) {
+    .bg-banner {
+        background-image: url('../img/banner-small.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .medium-nav {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .tile__inner {
+        padding: 10px 12px;
+        height: 100%;
+        -webkit-clip-path: polygon(20px 0%, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0% 20px);
+        clip-path: polygon(20px 0%, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0% 20px);
+    }
+
+    .tile__image {
+        padding: 0px;
+        border-radius: 15px;
+    }
+
+    .tile__heading {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .tile__price {
+        font-size: .875rem;
+        font-weight: bold;
+    }
+
+    .col-6.col-md-3 {
+        padding: 0;
+    }
+}
