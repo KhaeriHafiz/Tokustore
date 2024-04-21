@@ -7,6 +7,11 @@ body {
     font-weight: bold;
 }
 
+ul,
+li {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -178,4 +183,100 @@ a {
     .col-6.col-md-3 {
         padding: 0;
     }
+}
+
+.footer {
+    transition: color 200ms,
+        background-color 200ms;
+    margin-top: 56px;
+    color: #24282e;
+    text-align: center;
+    font-size: .875rem;
+    overflow: hidden;
+    background-color: white;
+    -webkit-clip-path: polygon(48px 0%, 100% 0, 100% 100%, 0 100%, 0% 48px);
+    clip-path: polygon(48px 0%, 100% 0, 100% 100%, 0 100%, 0% 48px);
+}
+
+.marq {
+    font-size: 5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.fo-logo {
+    width: 5%;
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-link {
+    color: #24282e;
+    font-weight: bold;
+}
+
+.footer-text {
+    color: #24282e;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* ////////////////////////////// */
+.marquee-section {
+    position: relative;
+    min-height: 150px;
+}
+
+.marquee-section,
+.marquee-section * {
+    overflow: hidden;
+}
+
+.marquee {
+    white-space: nowrap;
+}
+
+.marquee-div {
+    position: absolute;
+    animation: move-right-to-left linear 360s infinite;
+}
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+@media (max-width: 578px) {
+    .marq {
+        font-size: 4rem;
+    }
+
+    .fo-logo {
+        width: 15%;
+    }
+
+    .footer-list {
+        display: grid;
+    }
+
 }
